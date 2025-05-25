@@ -96,8 +96,8 @@ class Kynara:
 
     def run(self):
         from bluid.at import MAIN
-        main = MAIN()
-
+        Main().menu()
+        
 if __name__ == "__main__":
     kyna = Kynara()
     kyna.run()
