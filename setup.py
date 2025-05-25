@@ -32,7 +32,7 @@ with Progress(
         try:
             setup(ext_modules=[Extension(os.path.splitext(cpp)[0].replace("/", "."), sources=[cpp], extra_compile_args=["-O2"])])
             console.print(f"[green]✓[/green] Berhasil mengompilasi: {cpp}")
-            Logo("barme")
+        #    Logo("barme")
         except Exception as e:
             console.print(f"[red]✘[/red] Gagal mengompilasi {cpp}: {e}")
 
